@@ -11,13 +11,13 @@ restService.use(
 restService.use(bodyParser.json());
 
 
-//import responses
-const echo = require('./richresponses/echo');
-const echoCard = require('./richresponses/echoCard');
-const echoTableCard = require('./richresponses/echoTableCard');
-const echoSuggestion = require('./richresponses/echoSuggestion');
+// //import responses
+// const echo = require('./richresponses/echo');
+// const echoCard = require('./richresponses/echoCard');
+// const echoTableCard = require('./richresponses/echoTableCard');
+// const echoSuggestion = require('./richresponses/echoSuggestion');
 
-//
+// //
 
 
 
@@ -459,6 +459,6 @@ restService.post("/echoCarousel", function (req, res) {
   });
 });
 
-restService.listen(process.env.PORT || 8000, function () {
+restService.listen(process.env.PORT || 5000, function () {
   console.log("Server up and listening");
 });
