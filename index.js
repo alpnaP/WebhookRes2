@@ -3,6 +3,12 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 const restService = express();
+restService.use(
+  bodyParser.urlencoded({
+    extended: true
+  })
+);
+restService.use(bodyParser.json());
 
 
 //import responses
@@ -10,13 +16,10 @@ const echo = require('./richresponses/echo');
 const echoCard = require('./richresponses/echoCard');
 const echoTableCard = require('./richresponses/echoTableCard');
 const echoSuggestion = require('./richresponses/echoSuggestion');
-restService.use(
-  bodyParser.urlencoded({
-    extended: true
-  })
-);
 
-restService.use(bodyParser.json());
+//
+
+
 
 restService.post("/echo", function (req, res) {
   var speech =
