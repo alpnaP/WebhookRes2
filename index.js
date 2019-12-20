@@ -48,11 +48,9 @@ restService.post("/echo", function (req, res) {
 
   return res.json({
     payload: speechResponse,
-    //data: speechResponse,
     fulfillmentText: speech,
     speech: speech,
     displayText: speech,
-    source: "webhook-echo-sample"
   });
 });
 

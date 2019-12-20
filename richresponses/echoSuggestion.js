@@ -18,7 +18,7 @@ restService.post("/echoSuggestion", function (req, res) {
             },
             {
               simpleResponse: {
-                "textToSpeech": "What number do you have in mind?"
+                textToSpeech: "What number do you have in mind?"
               }
             }
           ],
