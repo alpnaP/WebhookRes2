@@ -36,7 +36,7 @@ restService.post("/echo", function (req, res) {
         items: [
           {
             simpleResponse: {
-              textToSpeech: "Hi, Welcome to test app"
+              textToSpeech: "Hi, Welcome to my echo app. Which response would you like to see next."
             }
 
 
